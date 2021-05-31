@@ -1,0 +1,320 @@
+	/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+	html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	
+        margin: 0;	
+        padding: 0;	
+        border: 0;	
+        font-size: 100%;	
+        font: inherit;	
+        vertical-align: baseline;}
+        
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	
+        display: block;}
+        
+        body {	
+        line-height: 1.5;
+        }
+        
+        ol, ul {	
+        list-style: none;
+        }
+        
+        blockquote, q {	
+        quotes: none;
+        }
+        
+        blockquote:before, blockquote:after,q:before, q:after {	
+        content: '';	
+        content: none;
+        }
+        
+        table {	
+        border-collapse: collapse;	border-spacing: 0;
+        }	 
+        
+        /* end reset*/
+
+
+/* COLORS:
+Dark Green: #97A89F
+Light Green: #D0F5E0
+Orange: #F5D6C4
+Dark Blue: #768EA8
+Light Blue: #B8D5F5
+*/
+
+/* FONTS */
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap'); */
+
+body {
+    font-size: 20px;
+    background-color: #768EA8;
+}
+    
+#wrapper {
+    width: auto;
+    max-width: 1200px;
+    min-width: 400px;
+    margin: 2% auto;
+    /* border: 1px solid green; */
+    border-radius: 10px;
+    background-color: #B8D5F5;
+}
+
+header {
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+    margin: 2% 0;
+    background-color: #F5D6C4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+header img {
+    height: auto;
+    width: 100%;
+    min-width: 400px;
+}
+
+h1 {
+    /* border: 1px solid red; */
+    font-size: 2.0em;
+    letter-spacing: .25em;
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+}
+
+h2 {
+    /* border: 1px solid pink; */
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#data {
+    width: 80%;
+    /* border: 1px solid brown; */
+    border-radius: 10px;
+    background-color: #768EA8;
+    margin: 0 auto 2% auto;
+    font-size: .9em;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "prep"
+        "cook"
+        "total"
+        "serve"
+        "tools"
+    ;
+}
+
+#data section {
+    /* border: 2px dashed #F5D6C4; */
+    border-radius: 5px 30px;
+    background-color: #D0F5E0;
+    display: block;
+    margin: 1%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.datatitle {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#ingredients {
+    width: 90%;
+    /* border: 1px solid brown; */
+    border-radius: 10px;
+    background-color: #768EA8;
+    margin: 0 auto 2% auto;
+    font-size: 0.9em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "ing1"
+        "ing2"    
+    ;
+}
+
+#ingredients span {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.85em;
+}
+
+#ingredients li {
+    /* border: 1px solid orange; */
+    border-radius: 5px;
+    background-color: #F5D6C4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    margin: 1.2%;
+    text-align: center;
+}
+
+.h3title{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    background-color: #B8D5F5;
+    margin: 1%;
+}
+
+/* .ing2 li {
+    height: 100%;
+    margin: auto auto;
+    padding-top: auto;
+    padding-bottom: auto;
+} */
+
+#steps {
+    width: 95%;
+    /* border: 1px solid brown; */
+    border-radius: 10px;
+    background-color: #768EA8;
+    margin: 2% auto;
+    font-size: 1.0em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#steps h3 {
+    /* margin: 2%; */
+}
+
+#steps span {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+#steps li {
+    /* border-bottom: 1px solid orange; */
+    border-radius: 5px;
+    background-color: #D0F5E0;
+    display: block;
+    margin: 1%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+#info {
+    width: 100%;
+    margin: 2% auto;
+    border-radius: 5px 5px 10px 10px;
+    background-color: #F5D6C4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#info img {
+    width: auto;
+    height: 17px;
+    padding: 0 1%;
+}
+
+footer {
+    font-size: .6em;
+}
+
+/* GRID AREA DECLARATIONS */
+.prep {grid-area: prep;}
+.cook {grid-area: cook;}
+.total {grid-area: total;}
+.serve {grid-area: serve;}
+.tools {grid-area: tools;}
+.ing1 {grid-area: ing1}
+.ing2 {grid-area: ing2}
+
+/* TABLET */
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+
+    h1 {
+        /* border: 1px solid red; */
+        font-size: 2.1em;
+        letter-spacing: .3em;
+        font-family: 'Kalam', cursive;
+        font-weight: bold;
+    }
+    
+    h2 {
+        /* border: 1px solid pink; */
+        font-size: 1.2em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #data {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "prep tools"
+        "cook tools"
+        "total tools"
+        "serve tools"
+        ;
+    }
+    
+    #data li {
+        /* border: 1px solid orange; */
+        display: block;
+        margin: 1%;
+        text-align: center;
+    }
+
+    #ingredients {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-areas:
+            "ing1 ing2" */
+        ;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1001px) {
+
+    h1 {
+        /* border: 1px solid red; */
+        font-size: 2.7em;
+        letter-spacing: .3em;
+        font-family: 'Kalam', cursive;
+        font-weight: bold;
+    }
+    
+    h2 {
+        /* border: 1px solid pink; */
+        font-size: 1.5em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #data {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "prep cook"
+            "total serve"
+            "tools tools"
+        ;
+    }
+    #data ul {
+        margin: 1px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+
+    #ingredients {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "ing1 ing2"
+        ;
+    }
+}
